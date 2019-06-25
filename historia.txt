@@ -1,1 +1,1 @@
-Primer repo en git
+Primer repositorio en git, con el primer cambio.
