@@ -1,0 +1,99 @@
+
+html{/*background-color: #FFBD5C*/}
+body{font-family: Rubik,sans-serif; background: url(../imgs/background-rpi.jpg) no-repeat center fixed;}
+/*To specify that the background image should be fixed (will not scroll with the rest of the page), use the background-attachment property*/
+/*.padre {background: url(../imgs/hero-rpi.jpg) no-repeat center fixed; background-size:cover; text-align: center;
+		padding: 5px;}*/
+.main_container {
+	/*background: url(../imgs/background-rpi.jpg) no-repeat center fixed;
+	background-size: cover; 
+	padding: 5px;
+	text-align: center;*/
+	text-align: center;
+	color: #f8f8f8;
+	
+}
+.profile{
+	font-family: Raleway, sans-serif;
+	text-shadow: 0 1px 1px #4D4D4D;
+	font-size: 18px;
+	text-align: center;
+	max-width: 697.5px;	/*will improve the browser's handling of small windows.*/
+	margin: auto;
+}
+.profile_photo{
+	background: url(../imgs/sauron.jpg) no-repeat center/cover ;
+	/*background-size: cover; */
+	padding: 5px;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	margin-top: 50px;
+	border: 2px solid;
+	border-color: rgb(248, 248, 248);
+    border-radius: 50%;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: 700;
+	letter-spacing: .05rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+p { line-height: 1.75rem; font-weight: 600; } /*espaciado entre lineas*/
+.profile_contact {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	/*background-color: gray;*/
+}
+.nav_links { 
+	margin: 3rem;
+	/*background-color: gray;
+	border: 2px solid;*/
+	/*margin-top: 3rem;
+	margin-bottom: 1rem;*/ 
+}
+ul.links {
+    list-style-type: none;	/*remove the markers/bullets.*/
+	margin: 0; /*es necesario para quitar el espacio que*/
+    padding: 0;	/*usaban las marcas*/
+}
+/*name class and name tags*/
+.nav_links .links > li >a {	
+	text-decoration: none; /*quitar underline*/
+	border: 2px solid;
+	border-color: rgb(248, 248, 248);
+    border-radius: 20px;
+    padding: 11px 22px;
+    color: #f8f8f8;
+    
+}
+.nav_links .links > li > a:hover{ color: #CA6153; } /*al pasar el mouse encima de*/
+/* display:specifies if/how an element is displayed.
+ * with display: inline-block, the top and bottom margins/paddings are respected, 
+ * but with display: inline they are not.*/
+.nav_links .links > li {
+	display: inline-block; /*Display a list of links as a horizontal*/
+	padding-right: 1rem;
+	padding-left: 1rem; /*dando espacio a cada link de list_links*/
+}
+/*resize the nav al tamaño del link para rotarlo*/
+.nav_contact{ /*border: 2px solid;*/
+	margin:auto;	/*to horizontally center the element within its container.*/
+	margin-top: 4rem;
+	width: 36px;
+	height: auto;
+	/*background-color:gray;*/
+}
+/*
+.nav_contact >a {	
+	text-decoration: none; 
+	border: 2px solid;
+	border-color: rgb(248, 248, 248);
+    border-radius: 20px;
+    padding: 11px 22px;
+    color: #f8f8f8;
+}*/
+.a_email_contact{  }
+.email_ico{ width:32px; }

@@ -1,0 +1,108 @@
+/*
+ * “Root Em“, es un em basado en la raíz, elemento HTML. No escalable.
+ * Em es básicamente el tamaño de una letra “M”,
+ * es escalable y depende de su elemento padre.
+ * /
+
+/* paddin=espacio entre div, 1rem=16px si font-size: 100%; /* 100% = 16px */ 
+/*html {background: url(../imgs/rpi-logo.png) right top no-repeat, #FDB255;  background-size: 3%;}*/
+html{background-color: #FFBD5C}
+body{font-family: Rubik,sans-serif;}
+/*.padre{position: absolute;left:0;right:0;margin: 1rem ; padding: 1rem; background: #7F7F7F;text-align: center;}*/
+/*html {background-image:url('../imgs/background.png'); background-repeat:no-repeat; background-size:cover;}*/
+/*To specify that the background image should be fixed (will not scroll with the rest of the page), use the background-attachment property*/
+/*.padre {background: url(../imgs/hero-rpi.jpg) no-repeat center fixed; background-size:cover; text-align: center;
+		padding: 5px;}*/
+.padre {
+	background: url(../imgs/rpi-logo.png) no-repeat right top ,
+					url(../imgs/hero-rpi.jpg) no-repeat center fixed;
+	background-size: 2%, cover; 
+	padding: 5px;
+	text-align: center;
+}
+.unknowStatus{background-color:#6c6d6f; width:45px; height:45px;margin:1px; float:left;}
+.disabled {background-color:#932626; width:45px; height:45px;margin:1px; float:left;}
+.enabled {background-color:#36ab36; width:45px; height:45px; margin:1px; float:left;}
+.infoText{background-color:#FFBD5C; border-radius: 3px; width:450px; margin:auto; 
+			font-weight: bold; padding: 1px; color: #fff} /*con <p> el padding es diferente*/
+/*.titulo {font-family: Rubik, sans-serif;font-weight: 900; font-size: 22px; color: #FFA500;}*/
+.header_top{
+	font-weight: 500;
+	font-size: 12px;
+	color: #FFBD5C;
+	background-color:#000000;
+	margin: auto;	/*to horizontally center the element within its container.*/
+	width: 300px;
+	border-radius: 6px;
+}
+.buttonPlay {
+	cursor: pointer;
+	border-radius: 6px;
+	font-size: 16px;
+	padding: 8px 12px; /*generate space around an element's content, inside of any defined borders.*/
+	font-weight: bold;
+}
+.buttonPlay:hover {
+	cursor: pointer;
+	border-radius: 6px;
+	font-size: 16px;
+	padding: 8px 12px;
+	background: #53ce63;
+	color: #fff;
+	font-weight: bold;
+}
+.buttonLight {background-color: #374E60; /* yellow */
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    width: 80px;
+    margin: 8px 4px;	/*create space around elements, outside of any defined borders.*/
+    cursor: pointer;
+	font-weight: bold;
+} 
+.buttonLightOn {background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    width: 80px;
+    margin: 8px 4px; 
+    cursor: pointer;
+    font-weight: bold;
+}
+/*Controles del joystick*/
+.buttonStop {background-color: #f44336;} /* Red */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 4px;
+    cursor: pointer;
+}
+.areasensor{ /*Align the flex items at the center of the container*/
+	/*justify-content property aligns the flexible container's items 
+	 * when the items do not use all available space on the main-axis (horizontally)*/
+	display: flex;
+    justify-content: center; 
+	/*background-color:gray;*/
+}
+.dataText{
+	/*background-color:white;*/
+}
+.infoText{
+	line-height: 1.75rem; font-weight: 600;
+}

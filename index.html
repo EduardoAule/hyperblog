@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title>Edu the Maker</title>
+    <meta http-equiv="Content-Type" content="text/html; charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/styleProfile.css" />
+    <script src="jquery/jquery-3.3.1.min.js" ></script>
+    <link rel="icon" type="image/png" href="imgs/robot_cara.png" />
+    <script>
+		//$("#w3s").attr("href"));	//get text of attr href
+	$(document).ready(function(){
+		$(".nav_contact").hover(function(){
+			//alert("You entered p1!");
+			$(".email_ico").attr({
+				"src" : "imgs/email-color.png"
+           
+			});
+		},
+		function(){
+			//alert("Bye! You now leave p1!");
+			$(".email_ico").attr({
+				"src" : "imgs/email-white.png"
+           
+			});
+		}); 
+	});
+
+	function change_ico() {
+		
+		$(".nav_contact").html('<img class="email_ico"  src="imgs/email-color.png" />');	//works ok
+	}
+	
+	</script>
+</head>
+<body>
+	
+    <div class="main_container" >
+		<div class="profile">
+			<div class="profile_photo"></div>
+			<h1 id="profile-title">Eduardo Sauron</h1>
+			<p>Raspberry Pi, PIC's, Arduino <br>
+			Python, Java, Bash, CGI, C<br>
+			and other crazy things in this site.</p>
+			<div class="profile_contact">
+				<nav class="nav_links">
+					<ul class="links">
+						<li class="list_links">
+							<a href="http://eduthemaker.duckdns.org/edustreaming.html">Blog</a>
+						</li>
+						<li class="list_links">
+							<a href="http://eduthemaker.duckdns.org/CV-Eduardo-Leon.pdf">About</a>
+						</li>
+					</ul>
+					
+				</nav>
+				<nav class="nav_contact" > <!--onmouseover="change_ico()"-->
+					<a rel="me" class="a_email_contact" style="transform: rotate(90deg);" href="mailto:eduardodepolaris@gmail.com" title="Email Eduardo">
+						<!--<i class="icon-mail"></i> obtenia icons de una lib-->
+						
+						<img class="email_ico" src="imgs/email-white.png" alt="send me a email.">
+					</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
